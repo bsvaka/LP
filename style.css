@@ -30,6 +30,6 @@ nav a {
 }
 
 /* script.js */
-function goToProduct(id) {
-  window.location.href = "product.html?id=" + id;
+function goToProduct() {
+  window.location.href = "product.html";
 }
