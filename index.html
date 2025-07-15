@@ -23,6 +23,36 @@ lpTag.sdes.push(
         }
    }
 );
+
+  lpTag.sdes = lpTag.sdes||[];
+lpTag.sdes.push(
+   {
+        "type": "personal",  //MANDATORY
+            "personal": {
+            "firstname": "John",  // FIRST NAME
+            "lastname": "Doe",  // SURNAME
+            "age": {
+               "age": 34,  // AGE AS INTEGER
+               "year": 1980,  // BIRTH YEAR
+               "month": 4,  // BIRTH MONTH
+               "day": 15  // BIRTH DAY
+           },
+            "contacts": [{
+               "email": "myname@example.com",  // EMAIL
+               "phone": "+1 212-788-8877",  // PHONE NUMBER
+               "preferred": "EMAIL",  // EMAIL, PHONE
+               "address": {
+                   "country": "USA"  // COUNTRY
+                   "region": "Atlanta"  // REGION
+                   "zipcode": "30009"  // ZIP OR POSTAL CODE
+               },
+           }],
+            "gender": "MALE",  // MALE, FEMALE, OTHER
+            "language": "hi-IN"  // LANGUAGE 
+            "company": "company"  // VISITOR COMPANY NAME
+        }
+   }
+);
 </script>
 <!-- END LivePerson Monitor. -->
 </head>
